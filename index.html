@@ -35,7 +35,7 @@ function getTime() {
     var newDate = year+"年"+month+"月"+date+"日"+hours+":"+minutes+":"+seconds+"&nbsp &nbsp"+week;
     document.getElementById("date1").innerHTML =  newDate;//在div中写入时间
     */
-    var meetTime = Number(new Date()) - Number(new Date("2018/08/17 19:30:00"));
+    var meetTime = Number(new Date()) - Number(new Date("2018/08/03 19:30:00"));
     var days = parseInt(meetTime/ 1000 / 3600 / 24);
     var hours = parseInt((meetTime - days * 24 * 3600 * 1000) / 3600000);
     var minutes = parseInt((meetTime - days * 24 * 3600 * 1000 - hours * 3600000)/1000/60);
